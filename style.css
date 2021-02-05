@@ -16,14 +16,14 @@ body {
 /* .intro {
   height: 100vh;
 } */
-
+/* 
 .intro video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+ */
 .intro h1 {
   position: absolute;
   top: 50%;
