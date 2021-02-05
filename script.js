@@ -1,4 +1,6 @@
-
+var bgvideo = document.getElementById("bgVideo");
+bgvideo.muted = true;
+bgvideo.play();
 
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
