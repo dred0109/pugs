@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -9,21 +9,20 @@ html{
 }
 body {
   overflow-x: hidden;
-/*   overflow-y: scroll; */
+  overflow-y: scroll; 
   font-family: "Montserrat", sans-serif;
 }
 
-/* .intro {
+ .intro {
   height: 100vh;
-} */
-/* 
+} 
 .intro video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
- */
+
 .intro h1 {
   position: absolute;
   top: 50%;
@@ -369,3 +368,4 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+ */
