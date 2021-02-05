@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro h2::after {
+  content: "\25BE";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+@media screen and (max-width: 767px) {
+  .intro h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 1rem;
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .intro h2::after {
+    content: "\25BE";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+section {
+  color: #000000;
+}
+
+#image-info h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  opacity: .7;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# About pugs
+--------------------------------------------------------------*/
+.container {
+  padding-top: 5rem;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container img {
+  vertical-align: middle;
+}
+
+.container .content {
+  position: relative;
+  bottom: 0;
+  background: black;
+  /* Fallback color */
+  background: rgba(95, 92, 76, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.row {
+  padding: 0 4px;
+}
+
+.column {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 3rem;
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .container img {
+    vertical-align: middle;
+  }
+  .container .content {
+    position: relative;
+    bottom: 0;
+    background: black;
+    /* Fallback color */
+    background: rgba(95, 92, 76, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: -1rem;
+  }
+  p {
+    padding-bottom: -4rem;
+    text-align: center;
+  }
+}
+
+.testimonials {
+  margin-top: 4rem;
+  background-image: url(./images/testimon-bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  opacity: .7;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonials .testimanials-container {
+  margin: 0 auto;
+}
+
+.testimonials .user-image {
+  margin-left: 0 auto;
+}
+
+.testimonials .user-image img {
+  border-radius: 60px;
+  margin: 1rem 0 1rem 0;
+}
+
+.testimonials .testimonials-text {
+  margin: auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.testimonials .user-name {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-text {
+    text-align: center !important;
+  }
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+          box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #ffc107;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #ffeeba;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  -webkit-box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+          box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+  padding: 30px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #ffc107;
+}
+
+.contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #ffc107;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #ffce3a;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
